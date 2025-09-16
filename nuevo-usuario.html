@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuevo Usuario - Level-Up Gamer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="d-flex min-vh-100">
+
+    <div class="sidebar p-3" style="background-color:#111111; min-width:200px;">
+      <h2 class="titulo mb-2">Panel</h2>
+      <hr style="border-color:#39FF14;">
+      <a href="administrador.html" class="btn-sidebar">Home</a>
+      <a href="admin-usuarios.html" class="btn-sidebar">Usuarios</a>
+      <a href="admin-productos.html" class="btn-sidebar">Productos</a>
+      <a href="home.html" class="btn-sidebar mt-3">Salir</a>
+    </div>
+
+    <div class="flex-grow-1 p-4" style="background-color:#000000;">
+      <h1 class="titulo mb-2 d-inline-block">Nuevo Usuario</h1>
+      <h2 class="subtitulo mb-4" style="color:#ccc;">Registro de Usuario</h2>
+
+      <form id="formRegistro" class="form-container mx-auto">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre Completo:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre completo" required maxlength="100">
+        </div>
+
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo:</label>
+          <input type="email" class="form-control" id="correo" placeholder="ejemplo@dominio.com" required maxlength="100">
+        </div>
+
+        <div class="mb-3">
+          <label for="confirmCorreo" class="form-label">Confirmar Correo:</label>
+          <input type="email" class="form-control" id="confirmCorreo" placeholder="Confirme su correo" required maxlength="100">
+        </div>
+
+        <div class="mb-3">
+          <label for="pass" class="form-label">Contraseña:</label>
+          <input type="password" class="form-control" id="pass" placeholder="Ingrese contraseña" required minlength="4" maxlength="10">
+        </div>
+
+        <div class="mb-3">
+          <label for="confirmPass" class="form-label">Confirmar Contraseña:</label>
+          <input type="password" class="form-control" id="confirmPass" placeholder="Confirme contraseña" required minlength="4" maxlength="10">
+        </div>
+
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono (opcional):</label>
+          <input type="text" class="form-control" id="telefono" placeholder="Ej: 912345678" maxlength="12">
+        </div>
+
+        <div class="row-selects d-flex gap-2 mt-3">
+            <select id="region" class="form-select" required>
+              <option value="">-- Seleccione Región --</option>
+            </select>
+            <select id="comuna" class="form-select" required>
+              <option value="">-- Seleccione Comuna --</option>
+            </select>
+          </div>
+
+        <div class="text-center mt-4">
+          <button type="submit" class="btn-ir">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/validaciones.js"></script>
+</body>
+</html>
