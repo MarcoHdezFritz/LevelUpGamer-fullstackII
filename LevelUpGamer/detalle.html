@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle del Producto - Level-Up Gamer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/navBar.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="img/logo.png" alt="Logo" width="80" height="80" class="me-2">
+        LEVEL-UP GAMER
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item ms-3 position-relative">
+            <a href="carrito.html" class="nav-link fs-3 position-relative p-0">
+            🛒
+            <span id="carritoCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <small><a href="home.html">Home</a> > <a href="productos.html">Productos</a> > <span id="breadcrumb-nombre"></span></small>
+  </div>
+
+  <div class="product-detail container mt-3 d-flex flex-wrap gap-4">
+    <div class="product-images" style="flex:1; min-width:300px;">
+      <img id="pd-img" src="" alt="" class="img-fluid rounded mb-2">
+      <div id="pd-miniaturas" class="d-flex gap-2"></div>
+    </div>
+
+    <div class="product-info" style="flex:1; min-width:300px;">
+      <h1 id="pd-nombre"></h1>
+      <p class="pd-price" id="pd-precio"></p>
+      <p id="pd-descripcion"></p>
+      <div class="pd-purchase d-flex align-items-center gap-2 mt-2">
+        Cantidad: <input type="number" id="pd-quantity" value="1" min="1" style="width:60px;">
+        <button id="pd-add-btn" class="btn-ir">Añadir al carrito</button>
+      </div>
+      <p class="pd-message mt-2" id="pd-message"></p>
+    </div>
+  </div>
+
+  <section class="related-products container mt-5">
+    <h2>Productos relacionados</h2>
+    <div class="related-list d-flex gap-5 flex-wrap" id="related-products"></div>
+  </section>
+
+  <footer class="text-center py-3 mt-5">© Level-Up Gamer — Productos 2025</footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/detalle.js"></script>
+</body>
+</html>

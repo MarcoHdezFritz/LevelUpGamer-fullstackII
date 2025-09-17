@@ -1,0 +1,337 @@
+/* ==========================
+   ESTILOS GLOBALES
+========================== */
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, .titulo {
+  font-family: 'Orbitron', sans-serif;
+  color: #39FF14;
+}
+
+footer {
+  background-color: #111111;
+  color: #D3D3D3;
+  font-size: 0.9rem;
+}
+
+/* ==========================
+   BOTONES
+========================== */
+.btn-ir {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #1E90FF;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-ir:hover {
+  background-color: #39FF14;
+  color: #000000;
+}
+
+/* ==========================
+   SECCIONES Y CONTENEDORES
+========================== */
+.padre {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+}
+
+.hijo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* ==========================
+   FORMULARIOS
+========================== */
+.form-container {
+  background-color: #111111;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+  max-width: 500px;
+}
+
+.form-label {
+  color: #39FF14;
+}
+
+.form-control {
+  background-color: #222222;
+  border: 1px solid #39FF14;
+  color: #FFFFFF;
+}
+
+.form-control:focus {
+  border-color: #1E90FF;
+  box-shadow: 0 0 5px #1E90FF;
+}
+
+/* ==========================
+   CARDS (BLOGS Y PRODUCTOS)
+========================== */
+.card {
+  background-color: #111111;
+  border: 1px solid #39FF14;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-title {
+  font-family: 'Orbitron', sans-serif;
+  color: #39FF14;
+}
+
+.card-text {
+  color: #D3D3D3;
+}
+
+.blog-card img,
+.producto-card img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* ==========================
+   CARRUSEL (HOME)
+========================== */
+.hijo.carrusel img {
+  height: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.btn-sidebar {
+  display: block;
+  width: 100%;
+  padding: 15px 20px; /* Más alto que antes */
+  margin-bottom: 10px;
+  font-size: 1.1rem;  /* Fuente más grande */
+  color: #FFFFFF;
+  background-color: #222222;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-sidebar:hover {
+  background-color: #39FF14;
+  color: #000000;
+}
+
+h1 {
+      color: #39FF14;
+      font-family: 'Orbitron', sans-serif;
+      margin-bottom: 5px;
+    }
+
+    h2.subtitulo {
+      color: #A9A9A9;
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      font-weight: normal;
+    }
+
+    .form-container {
+      background-color: #111111;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-control {
+      background-color: #222222;
+      border: 1px solid #39FF14;
+      color: #FFFFFF;
+      font-size: 1rem;
+      height: 40px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .form-label {
+      color: #39FF14;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .row-selects {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .row-selects select {
+      flex: 1;
+      height: 40px;
+      background-color: #222222;
+      color: #FFFFFF;
+      border: 1px solid #39FF14;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .btn-centro {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: #1E90FF;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-centro:hover {
+      background-color: #39FF14;
+      color: #000000;
+    }
+
+    .sidebar {
+      background-color: #111111;
+      min-width: 200px;
+      padding: 20px;
+    }
+
+    .btn-sidebar {
+      display: block;
+      width: 100%;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      color: #FFFFFF;
+      background-color: #222222;
+      border: none;
+      border-radius: 5px;
+      text-align: left;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn-sidebar:hover {
+      background-color: #39FF14;
+      color: #000000;
+    }
+
+    .flex-grow-1 {
+      padding: 40px;
+    }
+
+        h2.subtitulo {
+    color: #A9A9A9;
+    font-size: 1.2rem;
+    margin-top: 30px; 
+    margin-bottom: 5px;
+    font-weight: normal;
+    }
+
+.btn-nuevo {
+  text-decoration: none; 
+  margin-left: 60px;     
+}
+
+/* Botones + y - */
+.btn-azul {
+    background-color: #007BFF;
+    border: 1px solid #007BFF;
+    color: #fff;
+    font-weight: bold;          /* negrita */
+    border-radius: 4px;         /* menos redondeado */
+    padding: 3px 8px;
+    line-height: 1;             /* alineación correcta */
+    vertical-align: middle;     /* que no suba ni baje */
+}
+
+.btn-azul:hover {
+    background-color: #339CFF;
+    color: #fff;
+}
+
+/* Botón X */
+.btn-rojo {
+    background-color: #FF4136;
+    border: 1px solid #FF4136;
+    color: #fff;
+    font-weight: bold;          /* negrita */
+    border-radius: 4px;         /* menos redondeado */
+    padding: 3px 8px;
+    line-height: 1;             /* alineación correcta */
+    vertical-align: middle;     /* que no suba ni baje */
+}
+
+.btn-rojo:hover {
+    background-color: #FF6347;
+    color: #fff;
+}
+
+/* Tarjeta resumen de compra */
+.resumen-compra {
+  min-height: 400px;  /* hace la tarjeta más grande */
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOTAL */
+.total-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-text {
+  color: #FFFFFF;  /* TOTAL en blanco */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.total-valor {
+  color: #39FF14;  /* valor en verde */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Subtexto cupón */
+.cupón-subtexto {
+  color: #A9A9A9;
+  font-size: 0.85rem;
+}
+
+/* Botón PAGAR */
+.btn-pagar {
+  margin-top: auto; /* lo baja al final de la tarjeta */
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
